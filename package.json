@@ -1,0 +1,24 @@
+{
+  "name": "vue_lessons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "simple-server . 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anilnamde/vue_lessons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anilnamde/vue_lessons/issues"
+  },
+  "homepage": "https://github.com/anilnamde/vue_lessons#readme",
+  "dependencies": {
+    "simple-server": "^1.1.1"
+  }
+}
