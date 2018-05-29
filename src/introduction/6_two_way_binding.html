@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script src="./../lib/vue.js"></script>
+    <title>v-model directive</title>
+</head>
+
+<body>
+    <div id="app-6">
+        <p>{{ message }}</p>
+        <input v-model="message">
+    </div>
+</body>
+<a href=""></a>
+<script>
+    var app6 = new Vue({
+        el: '#app-6',
+        data: {
+            message: 'Hellow Vue!'
+        }
+    });
+</script>
+
+</html>
