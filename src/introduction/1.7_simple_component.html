@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script src="./../lib/vue.js"></script>
+    <title>component v-bind directive</title>
+</head>
+
+<body>
+    <div id="app-8">
+        <ol>
+            <banner/>
+        </ol>
+    </div>
+</body>
+<a href=""></a>
+<script>
+    Vue.component('banner', {
+        template: `<h1>Hellow Banner</h1>`
+    })
+
+    var app7 = new Vue({
+        el: '#app-8',
+        data: {}
+    })
+</script>
+
+</html>
