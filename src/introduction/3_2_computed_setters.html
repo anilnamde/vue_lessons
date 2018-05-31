@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script src="./../lib/vue.js"></script>
+    <title>lifecycle hooks</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>Full Name : <em>{{fullName}}</em></div>
+    </div>
+</body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            firstName: 'Anil',
+            lastName: 'Kumar',
+        },
+        computed: {
+            fullName: {
+                get() {
+                    return `${this.firstName} ${this.lastName}`;
+                },
+                set(newFullName) {
+                    [this.firstName, this.lastName] = newFullName.split(/\s+/ig);
+                }
+            }
+        }
+    })
+</script>
+
+</html>

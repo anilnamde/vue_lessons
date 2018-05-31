@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script src="./../lib/vue.js"></script>
+    <title>lifecycle hooks</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Hello {{message}}</h1>
+        <h1 v-once>Hello {{messageOnce}}</h1>
+        <br>
+        <div>
+            <div><span>{{htmlMessage}}</span></div>
+            <div><span v-html="htmlMessage"></span></div>
+        </div>
+        <br>
+        <div>
+            <! 
+                :title here is also a argument
+            >
+            <a href="#" v-bind:title="dynamicTitle">What is in the sky ?</a>
+        </div>
+    </div>
+</body>
+<a href=""></a>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Template Text Message',
+            messageOnce: 'Template Message BindOnce',
+            htmlMessage: '<em>This is html message</em>',
+            dynamicTitle: 'Sun',
+        },
+    })
+</script>
+
+</html>

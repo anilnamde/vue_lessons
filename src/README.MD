@@ -12,4 +12,12 @@
 ### 8_props_component.html
 
 ## Vue instance
-### 
+### 2_1 lifecycle hooks
+### 2_2 template syntax
+
+## Computed Properties and Watchers
+### 3_1 computed property
+### 3_2 computed setters
+### 3_3 watchers
+
+## Class Style Bindings
